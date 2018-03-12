@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Enda saavutused antud aines skript
+echo "Kaspar Metssalu"
+echo "ISP217"
+echo "Liiga lihtne tundub hetkel."
+echo -n "Edasijõuda on lihtne, kuna alused on aastaid tagasi omandatud"
+#
+# skripti lõpp
+
