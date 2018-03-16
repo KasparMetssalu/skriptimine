@@ -1,8 +1,11 @@
 #!/bin/bash
 #
-#
-#
-echo -n "Tere, "
-echo -n "User"
+# Enda saavutused antud aines skript
+#echo  "Tere, User"
+echo -n "Tere "
+echo -n `who am i | cut -c1`
+echo -n `who am i | cut -c2- | cut -f1 -d" "`
 echo "!"
 #
+# skripti lõpp
+
