@@ -1,10 +1,8 @@
 #!/bin/bash
 #
 # Enda saavutused antud aines skript
-echo "Kaspar Metssalu"
-echo "ISP217"
-echo "Liiga lihtne tundub hetkel."
-echo -n "Edasijõuda on lihtne, kuna alused on aastaid tagasi omandatud"
-#
+who | cut -f1 -d" " | cut -f2 -d"." > perenimi
+who | cut -f1 -d" " | cut -f1 -d"." > eesnimi
+paste -d"." perenimi eesnimi > nimed
+cat nimed | sort | uniq
 # skripti lõpp
-
