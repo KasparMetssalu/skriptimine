@@ -1,0 +1,4 @@
+#!/bin/bash
+#ülesanne2
+#eesmärk leida var kataloogis kõik .log failid ja kontrollib mitu rida on leitud failis
+echo `find /var/ -name "*.log" -exec wc -l {} + | sort -rn`
