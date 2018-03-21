@@ -1,0 +1,6 @@
+#!/bin/bash
+# See on kuupäeva programm
+#Päeva väljund
+date +"Täna on %A , %B %d, %Y"
+#kalender
+cal
