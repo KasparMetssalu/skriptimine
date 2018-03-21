@@ -1,0 +1,5 @@
+#!/bin/bash
+#Programmi eesmärk on koostada script, mis väljastab mitu päeva antud hetkel masin on tööl
+#skripti algus
+echo `hostname` "at" `date +"%H:%M:%S"` `uptime -p`
+#skripti lõpp
