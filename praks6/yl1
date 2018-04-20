@@ -1,0 +1,11 @@
+#!/bin/bash
+#skripti algus
+echo "Sisesta suvaline täisarv: "
+read number
+if [ $(($number % 2)) -eq 0 ]
+then
+echo $number "on paarisarv!"
+else
+echo $number "on paaritu"
+fi
+#skriptilõpp
