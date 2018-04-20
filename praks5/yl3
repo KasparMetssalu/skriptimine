@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Päeva nimede asemel on numbrid"
+echo "Näiteks pühapäev on 0, esmaspäev 1 ja laupäev 6"
+
+echo -n "Sisesta millal ära sõidad: "
+read lahkumine
+echo -n "Sisesta reisi pikkus: "
+read kestvus
+
+ylepaevad=$(($kestvus % 7))
+tagasi=$(($lahkumine + $ylepaevad))
+
+echo "Tagasi tulete $tagasi päeval"
+
+#lõpp

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo -n "Sisesta kolmnurga külje a pikkus: "
+read kylg1
+echo -n "Sisesta kolmnurga külje b pikkus: "
+read kylg2
+echo -n "Sisesta kolmnurga külje c pikkus: "
+read kylg3
+
+#arvutamine
+ymbermoot=$(echo "scale=2;$kylg1+$kylg2+$kylg3" | bc)
+pool=$(echo "scale=2;$ymbermoot/2" | bc)
+pindala=$(echo "scale2;sqrt($pool*($pool*($pool-$kylg1)*($pool-$kylg2)*($pool-kylg3))" | bc)
+echo "Kolmnurga pindala on $pindala"
+
+#lõpp
