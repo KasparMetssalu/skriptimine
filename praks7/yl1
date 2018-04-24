@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+echo "Sisesta oma vanus: "
+read vanus
+
+if [ $vanus -lt 0 ]
+then
+echo "Vigane"
+elif  [ $vanus -lt 12 ]
+then
+echo "Sa oled laps"
+elif [ $vanus -lt 19 ]
+then
+echo "Sa oled nooruk"
+elif [ $vanus -lt 64 ]
+then
+echo "Sa oled täiskasvanud"
+elif [ $vanus -lt 120 ]
+then
+echo "Sa oled vanur"
+elif [ $vanus -gt 120 ]
+then
+echo "Kuidas sa nii vana saad olla?"
+fi
+#skripti lõpp
