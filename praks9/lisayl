@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+#skriptialgus
+
+echo "Sisestage ridade arv: "
+read read
+var1=$read
+var2=$read
+for (( i = 1; $i <= $read; i++ ))
+	do
+	echo -n $i". "
+		for (( j = 1; j <= $read-i; j++ ))
+		do
+			echo -n "o"
+		done
+			for (( k = 1; k <= $i; k++ ))
+			do
+				echo -n "*"
+			done
+	echo ""
+done
+
+#
+#skriptilõpp
